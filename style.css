@@ -1,0 +1,279 @@
+:root {
+  --blue: #0065fc; 
+  --white: #fff; 
+  --grey: #d9d9d9; 
+  --sky: #deebff;
+}
+main {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  justify-content:space-between
+}
+
+ul { 
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+header h1 {
+  font-weight:bold;
+  font-size: x-large;
+  margin: 15px;
+
+}
+
+.filtres ul {
+  display: flex ;
+  gap: 16px;
+}
+
+nav li {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  border-top: solid 2px transparent;
+  padding: 25px;
+}
+
+nav a:hover,
+nav a:focus {
+  border-top-color: var(--blue);
+  color: var(--blue) ; 
+}
+
+form {
+  display: inline-block;
+  border-left: var(--white);
+  border-top:1px solid var(--grey);
+  border-right: var(--blue);
+  border-bottom: 1px solid var(--grey);
+  border-radius: 20% 20% 20% 20%;
+  margin: 14px;
+}
+
+ form button {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 24px solid var(--blue);
+  background-color: var(--blue);
+  border-radius:0 20% 20% 0 ;
+}
+
+form i {
+  background-color: var(--grey);
+  border: 27px solid var(--grey);
+  border-radius:20% 0 0 20% ;
+  
+}
+
+form input{
+  background-color: var(--white);
+  color:black;
+  font-weight: bold;
+  border: 8px var(--blue)
+}
+
+p {
+  color: black;
+  font-size: smaller;
+}
+
+p i {
+  color: var(--blue);
+  background-color: var(--grey);
+}
+
+
+.filtres {
+  display: flex;
+  object-fit: contain;
+  flex-direction: row;
+  justify-content:flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin: 15px;
+  padding: 2%;
+  border: 10em;
+}
+
+.filtres li {
+  border: 2px solid var(--grey);
+  background-color : #fff;
+  border-radius: 45px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.filtres li:hover, 
+.filtres li:focus, 
+[type="button"]:hover,
+[type="button"]:focus {
+background-color: var(--sky); 
+}
+
+.filtres i {
+  border: none;
+  color: var(--blue); 
+
+}
+
+[ type="button"] {
+  border: none;
+  font-weight: bold;
+  background-color: var(--white);
+}
+
+.filtres h2 {
+  font-weight:bold;
+  font-size: larger;
+}
+
+p {
+  margin: 15px;
+}
+
+header p {
+  color:black;
+  font-size: medium;
+}
+
+p {
+  color: black;
+  font-size: smaller;
+}
+
+h2 {
+  font-weight:bold;
+  font-size: medium;
+  margin: 15px;
+}
+
+img { 
+
+  max-width:  100%;
+  height: auto;
+  object-fit: cover;
+}
+main {
+  margin: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hebergements img {
+  width: 21vw;
+  height: 150px;
+}
+
+.hebergements {
+  display: inline-block;
+  border: 2px solid var(--grey);
+  background-color: var(--grey);
+  border-radius: 45px;
+  width: 70%;
+}
+
+.hebergements ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 45px;
+  gap: 25px;
+
+}
+
+ .hebergements h2 {
+  font-size: medium;
+}
+
+.hebergements li {
+  max-width: 25%;
+  border-width: 18px;
+  border: 15px;
+  border-style: none;
+  border-radius: 10%;
+  background-color: var(--white);
+  height: min-content;
+}
+
+.hebergements a > figure {
+  border-radius: 25% 25% 0% 0%;
+  padding: 3px;
+  background-color: var(--white);
+}
+
+.populaires img {
+  width: 30%;
+  height: 100px;
+}
+
+
+.populaires {
+  display: inline-block;
+  border: 2px solid var(--grey);
+  background-color: var(--grey);
+  border-radius: 45px;
+  margin: 15px;
+  padding: 15px;
+  width: 25%;
+}
+
+.populaires a > figure {
+  display: flex;
+}
+
+.populaires  li {
+  border: 2px solid var(--grey);
+  background-color: var(--white);
+  border-radius: 45px;
+  max-width: 85%;
+  height: min-content;
+  margin: 10%;
+}
+ 
+figcaption figure {
+  color:var(--blue);
+}
+
+.activites ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  background-color: var(--grey);
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+footer li {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: space-around;
+}
