@@ -250,13 +250,19 @@ figcaption figure {
   color:var(--blue);
 }
 
-.activites ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-
+.activites img {
+  width: 51 vw;
+  height: 150px;
 }
+
+.activites {
+  display:inline-block;
+  border: 2px solid var(--grey);
+  background-color: var(--grey);
+  border-radius: 45px;
+  gap: 25px;
+}
+
 footer {
   display: flex;
   flex-direction: row;
