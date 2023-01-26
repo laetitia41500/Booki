@@ -251,17 +251,26 @@ figcaption figure {
 }
 
 .activites img {
-  width: 51 vw;
-  height: 150px;
+  width: 30%;
+  height: 100px;
 }
 
-.activites {
-  display:inline-block;
-  border: 2px solid var(--grey);
-  background-color: var(--grey);
-  border-radius: 45px;
-  gap: 25px;
+.activites  a > figure {
+  display:flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
+.activites li {
+    border: 2px solid var(--grey);
+    background-color: var(--grey);
+    border-radius: 45px;
+    gap: 25px;
+    max-width: min-content;
+    height: min-content;
+    margin: 10%;
+  }
 
 footer {
   display: flex;
