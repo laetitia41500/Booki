@@ -1,9 +1,15 @@
 :root {
   --blue: #0065fc; 
   --white: #fff; 
-  --grey: #d9d9d9; 
+  --grey: #D9D9D9; 
   --sky: #deebff;
 }
+body {
+  margin: auto;
+  padding: 0 20px;
+  max-width: 1400px;
+}
+
 main {
   display: flex;
 }
@@ -23,10 +29,10 @@ nav ul {
   display: flex;
 }
 
-header h1 {
+ h1 {
   font-weight:bold;
   font-size: x-large;
-  margin: 15px;
+  margin: 30px 0 15px;
 
 }
 
@@ -43,6 +49,8 @@ a {
   text-decoration: none;
 }
 
+
+
 nav a {
   border-top: solid 2px transparent;
   padding: 25px;
@@ -54,6 +62,10 @@ nav a:focus {
   color: var(--blue) ; 
 }
 
+figure {
+  margin:0;
+}
+
 form {
   display: inline-block;
   border-left: var(--white);
@@ -61,7 +73,7 @@ form {
   border-right: var(--blue);
   border-bottom: 1px solid var(--grey);
   border-radius: 20% 20% 20% 20%;
-  margin: 14px;
+  margin: 14px 0;
 }
 
  form button {
@@ -104,8 +116,7 @@ p i {
   justify-content:flex-start;
   flex-wrap: nowrap;
   align-items: flex-start;
-  margin: 15px;
-  padding: 2%;
+  margin: 30px 0;
   border: 10em;
 }
 
@@ -142,7 +153,7 @@ background-color: var(--sky);
 }
 
 p {
-  margin: 15px;
+  margin: 15px 0;
 }
 
 header p {
@@ -168,13 +179,12 @@ img {
   object-fit: cover;
 }
 main {
-  margin: 3%;
   display: flex;
   justify-content: space-between;
 }
 
 .hebergements img {
-  width: 21vw;
+  width: 20vw;
   height: 150px;
 }
 
@@ -251,26 +261,38 @@ figcaption figure {
 }
 
 .activites img {
-  width: 30%;
-  height: 100px;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px 20px 0 0;
+}
+.activites h2 {
+  font-weight: bold;
+  font-size: x-large;
 }
 
-.activites  a > figure {
-  display:flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.activites ul {
+  display: flex;
+  justify-content: space-between;
 }
 
 .activites li {
-    border: 2px solid var(--grey);
-    background-color: var(--grey);
-    border-radius: 45px;
-    gap: 25px;
-    max-width: min-content;
-    height: min-content;
-    margin: 10%;
+  background-color: var(--white);
+  margin-block-end: 4em;
   }
+
+.activites figure {
+  color: black;
+  border-radius: 20px;
+  width: 200px; ;
+  height: 300px;
+  box-shadow: 5px 5px 10px 0 silver;
+}
+.activites figcaption {
+  font-weight: bolder;
+  font-size:large;
+}
+
+
 
 footer {
   display: flex;
