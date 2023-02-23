@@ -30,6 +30,11 @@ ul {
 nav ul {
   display: flex;
 }
+nav img {
+  margin-top: 20px;
+  width:60px ;
+  height:30px;
+}
 
  h1 {
   font-weight:bold;
@@ -69,7 +74,6 @@ figure {
 
 form {
   display: inline-block;
-  border-left: var(--white);
   border-top:1px solid var(--grey);
   border-right: var(--blue);
   border-bottom: 1px solid var(--grey);
@@ -80,21 +84,22 @@ form {
  form button {
   background-color: var(--blue);
   color: var(--white);
-  border: 24px solid var(--blue);
+  border: 2px solid var(--blue);
+  padding: 10px;
   background-color: var(--blue);
   border-radius:0 20% 20% 0 ;
 }
 
 form i {
   background-color: var(--grey);
-  border: 27px solid var(--grey);
+  border: 2px solid var(--grey);
+  padding: 10px;
   border-radius:20% 0 0 20% ;
-  
+
 }
 
 form input{
   background-color: var(--white);
-  color:black;
   font-weight: bold;
   border: 8px var(--blue)
 }
@@ -102,6 +107,17 @@ form input{
 p {
   color: black;
   font-size: smaller;
+}
+
+.fa-info {
+  position: relative;
+  border-bottom: 2px;
+  border: solid 1px var(--grey);
+  background-color: var(--white);
+  border-radius: 50%;
+  padding: 5px;
+  width: 8px;
+  height: 10px;
 }
 
 p i {
@@ -178,7 +194,7 @@ img {
 
   max-width:  100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 main {
   display: flex;
@@ -191,46 +207,40 @@ main {
 }
 
 .hebergements {
-  display: flex;
+  display: inline-block;
   flex-direction: row;
   border: 2px solid var(--grey);
   background-color: var(--grey);
   border-radius: 45px;
-  width: 70%;
-  height: 100%;
 }
 
 .hebergements ul {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-basis: content;
-  width: 100%;
   border-radius: 45px;
-  gap: 25px;
-
+  gap: 30px;
 }
 
  .hebergements h2 {
-  font-size: medium;
+  font-weight: bold;
+  margin:25px;
 }
 
 .hebergements li {
-  max-width: 25%;
-  border-width: 18px;
   border: 15px;
   border-style: none;
   border-radius: 10%;
   background-color: var(--white);
-  height: min-content;
 }
 
 .hebergements a > figure {
-  border-radius: 25% 25% 25% 25%;
-  width: fit-content;
-  padding: 3px;
+  padding: 4px;
   background-color: var(--white);
+  box-shadow: 5px 5px 10px 0 silver;
+  border-radius: 10% 10% 10% 10%;
 }
 
 .populaires img {
