@@ -220,12 +220,11 @@ figcaption {
   display: inline-block;
   position: relative;
   padding: 0 30px;
-  border: 3px solid var(--grey);
+  border: 5px solid var(--grey);
   background-color: var(--grey);
   border-radius: 45px;
   box-sizing: border-box;
   width: 70%;
-  
 }
 
 
@@ -269,6 +268,21 @@ border-radius: 10px 0 0 10px;
   margin-left: 20px;
   width: 30%;
 }
+.populaires header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 100px;
+}
+
+header h2 {
+  font-size: x-large;
+}
+
+header i {
+  color: var(--blue);
+
+}
 
 .populaires ul {
   display: flex;
@@ -295,7 +309,6 @@ border-radius: 10px 0 0 10px;
 figcaption {
   display: flex;
   flex-direction: column;
- 
   justify-content: space-evenly;
 }
 .hebergements figcaption {
