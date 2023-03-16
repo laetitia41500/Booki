@@ -211,7 +211,7 @@ figcaption {
 
 .hebergements img {
   width: 100%;
-  max-height: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
@@ -219,11 +219,13 @@ figcaption {
 .hebergements {
   display: inline-block;
   position: relative;
-  padding: 10px 10px 10px 10px;
+  padding: 0 30px;
   border: 2px solid var(--grey);
   background-color: var(--grey);
   border-radius: 45px;
   box-sizing: border-box;
+  width: 70%;
+  
 }
 
 
@@ -232,8 +234,7 @@ figcaption {
   flex-direction: row;
   flex-wrap: wrap;
   flex-basis: content;
-  justify-content: space-around;
-  gap: 60px;
+  gap: 30px;
 }
 
  .hebergements h2 {
@@ -242,10 +243,8 @@ figcaption {
 }
 
 .hebergements li {
-  width: calc((100% - 120px) / 3);
-  height: calc((100% -120px) / 2);
+  width: calc((100% - 60px) / 3);
 }
-
 .hebergements a > figure {
   padding: 2px;
   background-color: var(--white);
@@ -254,8 +253,8 @@ figcaption {
 }
 
 .populaires img {
-  width: 300px;
-  max-height: 200px;
+  width: 30%;
+  height: 150px;
   object-fit: cover;
 }
 
@@ -267,7 +266,7 @@ figcaption {
   border-radius: 45px;
   box-sizing: border-box;
   margin-left: 20px;
-  width: 100%;
+  width: 30%;
 }
 
 .populaires ul {
@@ -276,7 +275,7 @@ figcaption {
   flex-wrap: wrap;
   flex-basis: content;
   justify-content: space-around;
-  gap: 60px;
+  gap: 30px;
 }
 
 .populaires a > figure {
@@ -292,7 +291,18 @@ figcaption {
   max-width: 100%;
   margin: 10px;
 }
- 
+figcaption {
+  display: flex;
+  flex-direction: column;
+  height:100px;
+  justify-content: space-evenly;
+}
+
+ figcaption h3, 
+ figcaption p {
+  margin: 0;
+ }
+
 figcaption figure {
   color:var(--blue);
 }
