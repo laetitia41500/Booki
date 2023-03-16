@@ -220,7 +220,7 @@ figcaption {
   display: inline-block;
   position: relative;
   padding: 0 30px;
-  border: 2px solid var(--grey);
+  border: 3px solid var(--grey);
   background-color: var(--grey);
   border-radius: 45px;
   box-sizing: border-box;
@@ -253,9 +253,10 @@ figcaption {
 }
 
 .populaires img {
-  width: 30%;
+  width: 100px;
   height: 150px;
   object-fit: cover;
+border-radius: 10px 0 0 10px;
 }
 
 
@@ -294,8 +295,14 @@ figcaption {
 figcaption {
   display: flex;
   flex-direction: column;
-  height:100px;
+ 
   justify-content: space-evenly;
+}
+.hebergements figcaption {
+  height: 100px;
+}
+.populaires figcation {
+  height: 150px;
 }
 
  figcaption h3, 
