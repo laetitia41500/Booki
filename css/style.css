@@ -333,8 +333,10 @@ color: var(--grey);
 .activites img {
   width: 200px;
   height: 250px;
+  object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
+
 .activites h2 {
   font-weight: bold;
   font-size: x-large;
@@ -343,6 +345,7 @@ color: var(--grey);
 .activites ul {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 
 .activites li {
@@ -359,7 +362,7 @@ color: var(--grey);
 }
 .activites figcaption {
   font-weight: bolder;
-  font-size:large;
+  font-size: small;
 }
 
 
