@@ -88,21 +88,20 @@ form {
   border: 2px solid var(--blue);
   padding: 10px;
   background-color: var(--blue);
-  border-radius:0 20% 20% 0 ;
+  border-radius:0 10px 10px 0 ;
 }
 
 form i {
   background-color: var(--grey);
   border: 2px solid var(--grey);
-  padding: 10px;
+  padding: 17px;
   border-radius:20% 0 0 20% ;
-
 }
 
 form input{
   background-color: var(--white);
   font-weight: bold;
-  border: 8px var(--blue)
+  border: 1px solid var(--grey)
 }
 
 p {
@@ -237,7 +236,7 @@ figcaption {
 }
 
  .hebergements h2 {
-  margin:25px;
+  margin:25px 0;
   font-size: x-large;
 }
 
@@ -273,6 +272,7 @@ border-radius: 10px 0 0 10px;
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  justify-content: space-between;
   gap: 100px;
 }
 
@@ -397,8 +397,22 @@ footer ul {
   }
 
   .populaires ul {
-display: flex;
+flex-direction: row;
   }
+  .populaires li {
+    width: calc((100% - 80px) / 3);
+    border: 3.5px solid var(--white);
+    border-radius: 15 px;
+  }
+
+.populaires img {
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+.populaires figcaption {
+ font-size: small;
+}
+
   .activites figcaption {
     height: 20px;
   }
@@ -407,7 +421,8 @@ display: flex;
   main {
     flex-direction: column;
   }
-  .populaires,
+
+.populaires,
 .hebergements,
 .activites {
   width: 100%;
