@@ -308,7 +308,7 @@ header i {
 figcaption {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .hebergements figcaption {
   height: 100px;
@@ -317,9 +317,12 @@ figcaption {
   height: 150px;
 }
 
- figcaption h3, 
- figcaption p {
+ figcaption h3,figcaption p {
   margin: 0;
+ }
+  
+ .populaires figcaption p {
+  margin: 0 0 50px;
  }
 
 figcaption figure {
@@ -416,14 +419,43 @@ flex-direction: row;
   .activites figcaption {
     height: 20px;
   }
-
+}
 @media (max-width: 767px) {
   main {
     flex-direction: column;
   }
 
-.populaires,
-.hebergements,
-.activites {
-  width: 100%;
+  .populaires,
+  .hebergements,
+  .activites, 
+  .populaires li,
+  .hebergements li,
+  .activites li {
+    width: 100%;
   }
+
+  nav,
+  .populaires ul,
+  .hebergements ul,
+  .activites ul,
+  footer {
+    flex-direction: column;
+  }
+  
+  nav  {
+    place-items: center;
+  }
+
+  nav li {
+    width: 50vw;
+  }
+
+  nav a {
+    border-top: none;
+    border-bottom: solid 2px transparent;
+  }
+  nav a:hover, 
+  nav a:focus {
+    border-color: var(--blue);
+  }
+}
