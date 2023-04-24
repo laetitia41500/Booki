@@ -448,11 +448,13 @@ flex-direction: row;
 
   nav li {
     width: 50vw;
+    justify-content: center;
+    font-size: larger;
   }
 
   nav a {
     border-top: none;
-    border-bottom: solid 2px transparent;
+    border-bottom: solid 4px transparent;
   }
   nav a:hover, 
   nav a:focus {
