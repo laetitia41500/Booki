@@ -91,13 +91,15 @@ form {
   border-radius:0 10px 10px 0 ;
 }
 
-form i {
+.fa-location-dot {
   background-color: var(--grey);
   border: 2px solid var(--grey);
   padding: 17px;
   border-radius:20% 0 0 20% ;
 }
-
+.fa-magnifying-glass {
+  display: none;
+}
 form input{
   background-color: var(--white);
   font-weight: bold;
@@ -445,7 +447,10 @@ flex-direction: row;
   nav  {
     place-items: center;
   }
-
+  nav ul {
+  text-align: center;
+  }
+ 
   nav li {
     width: 50vw;
     justify-content: center;
@@ -455,9 +460,27 @@ flex-direction: row;
   nav a {
     border-top: none;
     border-bottom: solid 4px transparent;
+    width: 100%;
   }
   nav a:hover, 
   nav a:focus {
     border-color: var(--blue);
+  }
+
+  form, 
+  input {
+    width: 100%;
+  }
+  .hide-mobile {
+    display:none;
+  }
+  .fa-magnifying-glass {
+    display: block;
+  }
+  .filtres ul {
+    flex-wrap: wrap;
+  }
+  .filtres span {
+    font-size: x-small;
   }
 }
