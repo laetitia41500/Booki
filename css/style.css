@@ -83,6 +83,7 @@ form {
 }
 
  form button {
+  font-style: normal;
   background-color: var(--blue);
   color: var(--white);
   border: 2px solid var(--blue);
@@ -131,9 +132,8 @@ p i {
 .filtres {
   display: flex;
   object-fit: contain;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content:flex-start;
-  flex-wrap: nowrap;
   align-items: flex-start;
   margin: 30px 0;
   border: 10em;
@@ -253,7 +253,7 @@ figcaption {
 }
 
 .populaires img {
-  width: 100px;
+  width: 80px;
   height: 150px;
   object-fit: cover;
 border-radius: 10px 0 0 10px;
@@ -413,6 +413,7 @@ flex-direction: row;
 .populaires img {
   object-fit: cover;
   border-radius: 15px 0 0 15px;
+  width: 100px;
 }
 .populaires figcaption {
  font-size: small;
@@ -424,7 +425,7 @@ flex-direction: row;
 }
 @media (max-width: 767px) {
   main {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .populaires,
@@ -479,8 +480,17 @@ flex-direction: row;
   }
   .filtres ul {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .filtres span {
     font-size: x-small;
+  }
+  .filtres {
+    flex-flow: column;
+  }
+
+  .filtres li {
+    width: 118px;
+    padding: 5px;
   }
 }
