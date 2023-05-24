@@ -3,13 +3,13 @@
   --white: #fff; 
   --grey: #f2f2f2; 
   --sky: #deebff;
-  font-family: Raleway;
 }
 
 body {
   margin: auto;
   padding: 0 30px;
   max-width: 1400px;
+  font-family: Raleway, sans-serif;
 }
 
 main {
@@ -80,6 +80,9 @@ form {
   width: 400px;
   height: 50px;
   border-radius: 10px 0 10px 0;
+}
+.hide-mobile {
+  font-style: normal;
 }
 
  form button {
@@ -226,6 +229,7 @@ figcaption {
   border-radius: 45px;
   box-sizing: border-box;
   width: 70%;
+
 }
 
 
@@ -310,13 +314,19 @@ header i {
 figcaption {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .hebergements figcaption {
   height: 100px;
+  justify-content: space-between;
 }
 .populaires figcation {
+  position: relative;
   height: 150px;
+}
+.populaires figcaption figure {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
  figcaption h3,figcaption p {
