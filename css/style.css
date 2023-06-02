@@ -251,16 +251,17 @@ figcaption {
 }
 .hebergements a > figure {
   padding: 2px;
+  height: 150px;
   background-color: var(--white);
   box-shadow: 5px 5px 10px 0 silver;
   border-radius: 20px;
 }
 
 .populaires img {
-  width: 80px;
-  height: 150px;
+  width: 120px;
+  height: 200px;
   object-fit: cover;
-border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
 }
 
 
@@ -300,6 +301,8 @@ header i {
 }
 
 .populaires a > figure {
+  border: #fff solid 4px;
+  border-radius: 10px;
   display:flex ;
   order: 1;
   align-self: stretch;
@@ -319,12 +322,13 @@ figcaption {
   height: 100px;
   justify-content: space-between;
 }
-.populaires figcation {
+.populaires figcaption {
+  justify-content: space-between;
   position: relative;
   height: 150px;
 }
 .populaires figcaption figure {
-  position: absolute;
+  position: relative;
   bottom: 10px;
   left: 10px;
 }
@@ -332,7 +336,10 @@ figcaption {
  figcaption h3,figcaption p {
   margin: 0;
  }
-  
+  .populaires figcaption h3 {
+    font-size:  0.9rem;
+  }
+
  .populaires figcaption p {
   margin: 0 0 50px;
  }
@@ -421,7 +428,6 @@ flex-direction: row;
   }
 
 .populaires img {
-  object-fit: cover;
   border-radius: 15px 0 0 15px;
   width: 100px;
 }
